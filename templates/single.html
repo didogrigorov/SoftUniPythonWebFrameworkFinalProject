@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+      <div class="full-width relative">
+        <div class="aspect-[384/91] h-[350px] md:h-[455px]"><img class="h-full w-full object-cover" src="/static/{{ post_image }}" alt="Agon">
+        </div>
+        <div class="absolute w-full h-full bg-gray-900 top-0 opacity-50"></div>
+        <div class="absolute text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><span class="font-chivo inline-block bg-bg-6 text-green-900 py-[14px] px-[28px] rounded-[50px] text-[14px] leading-[14px] mb-[41px]">{{post.category}}</span>
+          <h1 class="font-extrabold font-chivo text-[35px] leading-[44px] sm:text-[46px] sm:leading-[52px] md:text-heading-1 text-white w-[18ch] lg:w-[25ch] !font-semibold"> {{ post.title }}
+          </h1>
+        </div>
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 mx-auto text-md text-gray-500 relative blog-content max-w-[830px] text-[14px] leading-[25px] md:text-[18px] md:leading-[32px]">
+        <div class="flex items-center justify-between mb-7 md:mb-[57px]">
+          <div class="flex items-center gap-[15px]"><img class="h-full w-full object-cover rounded-full max-w-[55px]" src="/static{{ prof_image }}" alt="avatar">
+            <div> 
+              <p class="text-lead line-clamp-2 font-bold mb-[3px] text-gray-900 !text-heading-6">{{ author.user.first_name }} {{ author.user.last_name }}
+              </p>
+              <p class="text-md text-gray-500 !text-sm font-bold">{{ date_human }}</p>
+            </div>
+          </div><span class="font-chivo inline-block bg-bg-6 text-green-900 py-[14px] px-[28px] rounded-[50px] text-[14px] leading-[14px]">{{ comments_len }} comments</span>
+        </div>
+          {% autoescape off %}
+           {{ post.body }}
+          {% endautoescape %}
+        <p class="mb-[40px] md:mb-[71px]">Tortor placerat bibendum consequat sapien, facilisi facilisi pellentesque morbi. Id consectetur ut vitae a massa a. Lacus ut bibendum sollicitudin fusce sociis mi. Dictum volutpat praesent ornare accumsan elit venenatis. Congue sodales nunc quis ultricies odio porta. Egestas mauris placerat leo phasellus ut sit.</p>
+        <div class="w-full bg-gray-200 mb-7 h-[1px] md:mb-10"></div>
+        <div class="flex items-center gap-4 mb-10 flex-wrap md:mb-[60px]">
+            {%  for tag in tags %}
+              <button type="button"> <a class="flex items-center inline-block z-10 relative transition-all duration-200 group py-3 px-5 rounded-md bg-gray-200 text-gray-900 hover:bg-gray-900 hover:text-white hover:-translate-y-[2px]" href="#"><span class="block text-inherit w-full h-full rounded-md text-md font-normal">{{ tag }}</span></a></button>
+            {% endfor %}
+        </div>
+        <h2 class="font-bold font-chivo text-[28px] leading-[32px] md:text-heading-2 text-gray-900 mb-[35px] md:mb-[52px]">Comments
+        </h2>
+        <div class="md:mb-[120px] mb-[60px]">
+          {% for comment in comments %}
+          <div class="flex items-start flex-col gap-5 md:gap-[100px] mb-[30px] md:mb-[42px] md:flex-row">
+            <div class="flex items-center gap-[15px] w-[190px]"><img class="h-full w-full object-cover rounded-full max-w-[55px]" src="/static/{{ comment.author.profile_image }}" alt="avatar">
+              <div> 
+                <p class="text-lead line-clamp-2 font-bold mb-[3px] text-gray-900 !text-heading-6">{{ comment.author.user.first_name }} {{ comment.author.user.last_name }}
+                </p>
+                <p class="text-md text-gray-500 !text-sm font-bold">{{ comment.created }}</p>
+              </div>
+            </div>
+            <p class="bg-gray-100 rounded-2xl rounded-tl-none pt-7 pl-7 text-gray-900 flex-1 pr-[15px] pb-[30px]">{{ comment.body }}</p>
+          </div>
+          {% endfor %}
+        <div class="w-full bg-gray-200 mb-7 h-[1px] md:mb-10"></div>
+        <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 text-gray-900 mb-[30px] md:mb-[42px]">Leave a comment
+        </h3>
+        <form method="POST" action="{% url 'create_comment' post=post.slug %}">
+            {{ form_comment }}
+          <div class="flex items-start justify-between w-full flex-col gap-8 md:flex-row">
+            <button class="flex items-center transition-colors duration-200 px-5 py-[14px] rounded-[8px] text-text bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900" type="submit">Post comment
+            </button>
+              {% csrf_token %}
+          </div>
+        </form>
+      </div>
+    </div>
+
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 !mt-[80px] md:!mt-[150px]">
+        <div class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] gap-5 mx-auto bg-bg-6 px-[15px] py-[50px] md:flex md:px-[52px] md:py-[72px] lg:gap-[40px] lg:h-[420px] xl:h-[390px] max-w-[1190px]">
+          <div class="flex-1 mb-[30px]">
+            <p class="text-capitalized uppercase text-gray-500 tracking-[2px] mb-[13px]">newsletter</p>
+            <h4 class="font-bold font-chivo text-[28px] leading-[32px] md:text-heading-2 mb-[20px]">Subscribe our newsletter</h4>
+            <p class="text-text text-gray-500">By clicking the button, you are agreeing with our
+            </p><a class="text-green-900" href="/staticfiles">Term & Conditions</a>
+            <form method="POST" class="mt-[30px]" action="{% url 'post_detail' post=post.slug %}">
+              <div class="bg-white flex items-center justify-between p-3 rounded-[55px]">
+                  {{ form }}
+                   <button class="rounded-full bg-green-900 grid place-items-center w-[56px] h-[56px]" type="submit"> <img class="filter-white" src="{%  static '/assets/images/icons/icon-right.svg' %}" alt=""></button>
+                  {% csrf_token %}
+              </div>
+            </form>
+          </div>
+          <div class="relative flex-1"> <img class="h-full w-full object-cover rounded-2xl img-shadow lg:absolute lg:max-w-[332px] lg:h-[403px] lg:right-0" src="{% static '/assets/images/thumbnail-2.png' %}" alt="Agon"><img class="h-full w-full object-cover absolute animate-float w-[225px] h-[170px] rounded-[14px] bottom-[-20px] left-[-10px]" src="{% static '/assets/images/chart.png' %}" alt="Agon">
+          </div>
+        </div>
+      </div>
+        <div class="bg fixed bottom-28 rounded-full grid place-items-center opacity-0 invisible transition-all duration-300 right-[20px] z-[9999] w-[48px] h-[48px]" id="backToTop"><a class="rounded-full bg-green-900 grid place-items-center w-[48px] h-[48px]" href="#top"><img src="../staticfiles/assets/images/icons/icon-up.svg" alt="to top icon"></a></div>
+{% endblock %}

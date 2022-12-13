@@ -1,0 +1,225 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="{% static 'assets/styles/tailwind.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/styles/app.min.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&amp;family=Noto+Sans:wght@400;500;600;700;800&amp;display=swap">
+  </head>
+  <body class="overflow-x-hidden w-screen relative single-page">
+    <div class="full-with address hidden">
+      <div class="flex items-center px-3 justify-between gap-5 mx-auto max-w-[1320px] py-[10px] md:mx-8">
+        <p class="text-base hidden font-bold md:block">66 avenue des Champs, 75008, Paris, France</p>
+        <div class="flex items-center gap-5 contact ml-auto gap-[10px] md:gap-5 md:flex-row"> <span>(+01) - 456 789</span>
+          <div class="border border-dashed border-white self-stretch"></div><span>contact@agon.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]"><a name="top"> </a>
+      <div class="absolute top-0 left-0 w-screen h-full bg-opacity-80 hidden video-iframe bg-[#0b0b0b] z-[999999]">
+        <div class="mx-auto video w-1/2">
+          <div class="flex justify-end">
+            <button class="text-white close-video text-[20px]" type="button" title="Close (Esc)">x</button>
+          </div>
+          <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/oRI37cOPBQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <header class="h-auto full-width relative py-[15px] first-letter:lg:py-[26px]">
+        <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 flex items-center justify-between mx-auto relative !mt-0 max-w-[1320px]"><a class="flex" href="/staticfiles"><img class="logo z-50 w-[90px] md:w-[101px] lg:w-[122px] xl:w-[138px]" src="{%  static '/assets/images/logo.svg' %}" alt="logo image"></a>
+          <nav class="z-50 absolute hidden top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:block"> 
+            <ul class="navbar flex flex-col justify-center font-chivo gap-[34px] lg:flex-row">
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="#">Home</a>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-2 w-[340px]">
+                </ul>
+              </li>
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/staticfiles">About</a>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
+                </ul>
+              </li>
+
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/staticfiles">Pages</a>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
+                    <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="contact"><a class="flex items-center text-[14px]" href="/contact.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="../staticfiles/assets/images/icons/icon-plane-header.svg" alt=""><span class="whitespace-nowrap">Contact</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="singup"><a class="flex items-center text-[14px]" href="/signup.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="../staticfiles/assets/images/icons/icon-user-add.svg" alt=""><span class="whitespace-nowrap">Sign Up</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="login"><a class="flex items-center text-[14px]" href="/login.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="../staticfiles/assets/images/icons/icon-fingerprint.svg" alt=""><span class="whitespace-nowrap">Log In</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="rp"><a class="flex items-center text-[14px]" href="/reset-password.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="../staticfiles/assets/images/icons/icon-settings.svg" alt=""><span class="whitespace-nowrap">Reset Password</span></a></li>
+                </ul>
+              </li>
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/staticfiles">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hidden xl:block">
+            <button type="button"> <a class="flex items-center inline-block z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-[50px] bg-gray-100 text-gray-900 hover:bg-gray-900 hover:text-white hover:-translate-y-[2px] hidden lg:flex" href="#"><span class="block text-inherit w-full h-full rounded-[50px] text-heading-6 font-bold font-chivo">Author Sign Up</span><i> <img class="ml-[7px] w-[12px] filter-black group-hover:filter-white" src="{% static '/assets/images/icons/icon-right.svg' %}" alt="arrow right icon"></i></a></button>
+          </div>
+        </div>
+      </header>
+      <div class="full-width relative">
+        <div class="aspect-[384/91] h-[350px] md:h-[455px]"><img class="h-full w-full object-cover" src="/static/{{ post_image }}" alt="Agon">
+        </div>
+        <div class="absolute w-full h-full bg-gray-900 top-0 opacity-50"></div>
+        <div class="absolute text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><span class="font-chivo inline-block bg-bg-6 text-green-900 py-[14px] px-[28px] rounded-[50px] text-[14px] leading-[14px] mb-[41px]">{{post.category}}</span>
+          <h1 class="font-extrabold font-chivo text-[35px] leading-[44px] sm:text-[46px] sm:leading-[52px] md:text-heading-1 text-white w-[18ch] lg:w-[25ch] !font-semibold"> {{ post.title }}
+          </h1>
+        </div>
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 mx-auto text-md text-gray-500 relative blog-content max-w-[830px] text-[14px] leading-[25px] md:text-[18px] md:leading-[32px]">
+        <div class="flex items-center justify-between mb-7 md:mb-[57px]">
+          <div class="flex items-center gap-[15px]"><img class="h-full w-full object-cover rounded-full max-w-[55px]" src="/static{{ prof_image }}" alt="avatar">
+            <div> 
+              <p class="text-lead line-clamp-2 font-bold mb-[3px] text-gray-900 !text-heading-6">{{ author.first_name }} {{ author.last_name }}
+              </p>
+              <p class="text-md text-gray-500 !text-sm font-bold">{{ date_human }}</p>
+            </div>
+          </div><span class="font-chivo inline-block bg-bg-6 text-green-900 py-[14px] px-[28px] rounded-[50px] text-[14px] leading-[14px]">18 comments</span>
+        </div>
+          {% autoescape off %}
+           {{ post.body }}
+          {% endautoescape %}
+        <p class="mb-[40px] md:mb-[71px]">Tortor placerat bibendum consequat sapien, facilisi facilisi pellentesque morbi. Id consectetur ut vitae a massa a. Lacus ut bibendum sollicitudin fusce sociis mi. Dictum volutpat praesent ornare accumsan elit venenatis. Congue sodales nunc quis ultricies odio porta. Egestas mauris placerat leo phasellus ut sit.</p>
+        <div class="w-full bg-gray-200 mb-7 h-[1px] md:mb-10"></div>
+        <div class="flex items-center gap-4 mb-10 flex-wrap md:mb-[60px]">
+            {%  for tag in tags %}
+              <button type="button"> <a class="flex items-center inline-block z-10 relative transition-all duration-200 group py-3 px-5 rounded-md bg-gray-200 text-gray-900 hover:bg-gray-900 hover:text-white hover:-translate-y-[2px]" href="#"><span class="block text-inherit w-full h-full rounded-md text-md font-normal">{{ tag }}</span></a></button>
+            {% endfor %}
+        </div>
+        <h2 class="font-bold font-chivo text-[28px] leading-[32px] md:text-heading-2 text-gray-900 mb-[35px] md:mb-[52px]">Comments
+        </h2>
+        <div class="md:mb-[120px] mb-[60px]">
+          {% for comment in comments %}
+          <div class="flex items-start flex-col gap-5 md:gap-[100px] mb-[30px] md:mb-[42px] md:flex-row">
+            <div class="flex items-center gap-[15px] w-[190px]"><img class="h-full w-full object-cover rounded-full max-w-[55px]" src="/static/{{ comment.author.profile_image }}" alt="avatar">
+              <div> 
+                <p class="text-lead line-clamp-2 font-bold mb-[3px] text-gray-900 !text-heading-6">{{ comment.author.first_name }} {{ comment.author.last_name }}
+                </p>
+                <p class="text-md text-gray-500 !text-sm font-bold">{{ comment.created }}</p>
+              </div>
+            </div>
+            <p class="bg-gray-100 rounded-2xl rounded-tl-none pt-7 pl-7 text-gray-900 flex-1 pr-[15px] pb-[30px]">{{ comment.body }}</p>
+          </div>
+          {% endfor %}
+        <div class="w-full bg-gray-200 mb-7 h-[1px] md:mb-10"></div>
+        <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 text-gray-900 mb-[30px] md:mb-[42px]">Leave a comment
+        </h3>
+        <form method="POST" action="{% url 'create_comment' post=post.slug %}">
+            {{ form_comment }}
+          <div class="flex items-start justify-between w-full flex-col gap-8 md:flex-row">
+            <button class="flex items-center transition-colors duration-200 px-5 py-[14px] rounded-[8px] text-text bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900" type="submit">Post comment
+            </button>
+              {% csrf_token %}
+          </div>
+        </form>
+      </div>
+    </div>
+
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 !mt-[80px] md:!mt-[150px]">
+        <div class="rounded-2xl p-[30px] md:py-[53px] md:px-[48px] gap-5 mx-auto bg-bg-6 px-[15px] py-[50px] md:flex md:px-[52px] md:py-[72px] lg:gap-[40px] lg:h-[420px] xl:h-[390px] max-w-[1190px]">
+          <div class="flex-1 mb-[30px]">
+            <p class="text-capitalized uppercase text-gray-500 tracking-[2px] mb-[13px]">newsletter</p>
+            <h4 class="font-bold font-chivo text-[28px] leading-[32px] md:text-heading-2 mb-[20px]">Subscribe our newsletter</h4>
+            <p class="text-text text-gray-500">By clicking the button, you are agreeing with our
+            </p><a class="text-green-900" href="/staticfiles">Term & Conditions</a>
+            <form method="POST" class="mt-[30px]" action="{% url 'post_detail' post=post.slug %}">
+              <div class="bg-white flex items-center justify-between p-3 rounded-[55px]">
+                  {{ form }}
+                   <button class="rounded-full bg-green-900 grid place-items-center w-[56px] h-[56px]" type="submit"> <img class="filter-white" src="{%  static '/assets/images/icons/icon-right.svg' %}" alt=""></button>
+                  {% csrf_token %}
+              </div>
+            </form>
+          </div>
+          <div class="relative flex-1"> <img class="h-full w-full object-cover rounded-2xl img-shadow lg:absolute lg:max-w-[332px] lg:h-[403px] lg:right-0" src="{% static '/assets/images/thumbnail-2.png' %}" alt="Agon"><img class="h-full w-full object-cover absolute animate-float w-[225px] h-[170px] rounded-[14px] bottom-[-20px] left-[-10px]" src="{% static '/assets/images/chart.png' %}" alt="Agon">
+          </div>
+        </div>
+      </div>
+        <div class="bg fixed bottom-28 rounded-full grid place-items-center opacity-0 invisible transition-all duration-300 right-[20px] z-[9999] w-[48px] h-[48px]" id="backToTop"><a class="rounded-full bg-green-900 grid place-items-center w-[48px] h-[48px]" href="#top"><img src="../staticfiles/assets/images/icons/icon-up.svg" alt="to top icon"></a></div>
+    <footer class="mt-[92px] lg:mt-[150px] xl:mt-[200px] mb-[30px]">
+        <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0">
+          <div class="flex flex-col items-center gap-2 mb-14 md:flex-row md:justify-between"> <img class="h-full w-full object-cover max-w-[162px]" src="{%  static '/assets/images/logo.svg' %}" alt="logo">
+            <div class="flex items-center flex-col gap-5 md:flex-row lg:gap-[30px]">
+              <p class="text-heading-6 font-chivo font-bold">Ready to Sign Up?</p>
+              <button type="button"> <a class="flex items-center inline-block z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-white bg-gray-900 w-fit" href="#"><span class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Create an Account</span></a></button>
+            </div>
+          </div>
+          <div class="w-full bg-gray-200 h-[1px] mb-[52px]"></div>
+          <div class="text-gray-600 grid gird-cols-1 gap-8 mb-[48px] md:grid-cols-2 lg:grid-cols-5 xl:gap-[98px]">
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">Contact</h5>
+              <p class="text-text mb-5">4517 Washington Ave. Manchester, Kentucky 39495
+              </p>
+              <p class="text-text underline">(239) 555-0108
+              </p>
+              <p class="text-text underline">contact@agon.com
+              </p>
+            </div>
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">About Us</h5>
+              <ul>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Mission &amp; Vision</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Our Team</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Careers</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Press &amp; Media</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Advertising</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Testimonials</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">Discover</h5>
+              <ul>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Our Blog</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Plans &amp; Pricing</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Knowledge Base</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Cookie Policy</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Office Center</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">News &amp; Events</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">Support</h5>
+              <ul>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">FAQs</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Editor Help</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Community</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Live Chatting</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Contact Us</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Support Center</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">Useful links</h5>
+              <ul>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Request an offer</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">How it works</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Pricing</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Reviews</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/staticfiles">Stories</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full bg-gray-200 h-[1px] mb-[46px]"></div>
+          <div class="text-gray-400 lg:flex lg:items-center lg:justify-between">
+            <div class="md:flex md:items-center md:gap-6">
+              <p class="text-lead font-bold">©Agon Official 2022
+              </p>
+              <div class="flex items-center justify-between md:gap-6"><a class="text-text" href="/staticfiles">Privacy policy</a><a class="text-text" href="/staticfiles">Cookies</a><a class="text-text" href="/staticfiles">Terms of service</a></div>
+            </div>
+            <div class="flex items-center justify-center gap-5 mt-5 lg:mt-0"><a class="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1" href="/staticfiles"><img class="h-full w-full object-cover" src="{%  static '/assets/images/icons/icon-facebook-green.svg' %}" alt="facebook icon"></a><a class="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1" href="/staticfiles"><img class="h-full w-full object-cover" src="../staticfiles/assets/images/icons/icon-instagram-green.svg" alt="instagram icon"></a><a class="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1" href="/staticfiles"><img class="h-full w-full object-cover" src="../staticfiles/assets/images/icons/icon-twitter-green.svg" alt="twitter icon"></a><a class="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1" href="/staticfiles"><img class="h-full w-full object-cover" src="../staticfiles/assets/images/icons/icon-linkedin-green.svg" alt="linkedin icon"></a></div>
+          </div>
+        </div>
+      </footer>
+    <script type="text/javascript" src="{% static '/assets/scripts/vendors/jquery-3.6.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static '/assets/scripts/vendors/slick.min.js' %}"></script>
+    <script src="{% static '/assets/scripts/app.js' %}"></script>
+  </body>
+</html>

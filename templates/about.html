@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <body class="overflow-x-hidden w-screen relative about-3-page">
+    <div class="full-with address hidden">
+      <div class="flex items-center px-3 justify-between gap-5 mx-auto max-w-[1320px] py-[10px] md:mx-8">
+        <p class="text-base hidden font-bold md:block">66 avenue des Champs, 75008, Paris, France</p>
+        <div class="flex items-center gap-5 contact ml-auto gap-[10px] md:gap-5 md:flex-row"> <span>(+01) - 456 789</span>
+          <div class="border border-dashed border-white self-stretch"></div><span>contact@agon.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]"><a name="top"> </a>
+      <div class="absolute top-0 left-0 w-screen h-full bg-opacity-80 hidden video-iframe bg-[#0b0b0b] z-[999999]">
+        <div class="mx-auto video w-1/2">
+          <div class="flex justify-end">
+            <button class="text-white close-video text-[20px]" type="button" title="Close (Esc)">x</button>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 text-center">
+        <div class="text-center mb-[35px] md:mb-[43px]">
+          <h2 class="font-bold font-chivo mx-auto text-[35px] leading-[44px] md:text-[46px] md:leading-[52px] lg:text-heading-1 text-gray-900 mb-5 md:mb-[30px] max-w-[725px]">Our Story</h2>
+          <p class="text-quote md:text-lead-lg text-gray-600 mx-auto max-w-[976px]">
+          </p>
+        </div>
+        <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 text-gray-600 mx-auto mb-[40px] md:mb-[75px] md:w-[47ch]">We supply enterprises, organizations and institutes of high-tech industries with modern components. We build long-term trusting relationships with our customers and partnes for further fruitful cooperations.
+        </h3>
+
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[138px]">
+        <!-- <div class="text-center mb-[45px] lg:mb-[88px]">
+          <h2 class="font-bold font-chivo mx-auto text-[35px] leading-[44px] md:text-[46px] md:leading-[52px] lg:text-heading-1 text-gray-900 mb-5 md:mb-[30px] max-w-full">Providing solutions of every kind</h2>
+          <p class="text-quote md:text-lead-lg text-gray-600 mx-auto max-w-[743px]">In a professional context it often happens that private or corporate clients order a publication to publish news.
+          </p>
+        </div> -->
+        <div class="lg:flex lg:items-center gap-[30px]">
+          <div class="flex items-start gap-5 transition-all duration-300 mb-[33px] hover:translate-y-[-3px] border-b border-gray-200 pb-[50px] last:mb-0"><img class="h-full w-full object-cover max-w-[64px]" src="{%  static '/assets/images/icons/icon-resources.svg' %}" alt="icon">
+            <div>
+              <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 mb-[14px]">1. Acquisition
+              </h3>
+              <p class="text-excerpt">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5 transition-all duration-300 mb-[33px] hover:translate-y-[-3px] border-b border-gray-200 pb-[50px] last:mb-0"><img class="h-full w-full object-cover max-w-[64px]" src="{%  static '/assets/images/icons/icon-cards.svg' %}" alt="icon">
+            <div>
+              <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 mb-[14px]">2. Activation
+              </h3>
+              <p class="text-excerpt">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-5 transition-all duration-300 mb-[33px] hover:translate-y-[-3px] border-b border-gray-200 pb-[50px]"><img class="h-full w-full object-cover max-w-[64px]" src="{% static '/assets/images/icons/icon-stats.svg' %}" alt="icon">
+            <div>
+              <h3 class="font-bold font-chivo text-[20px] leading-[26px] md:text-heading-4 mb-[14px]">3. Retention
+              </h3>
+              <p class="text-excerpt">Aliquam a augue suscipit, luctus neque purus ipsum neque at dolor primis libero tempus, blandit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="full-width bg-bg-6">
+        <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 flex flex-col gap-6 mx-auto py-[98px] lg:flex-row max-w-[1320px]">
+          <div class="flex flex-col gap-8 flex-1">
+            <div class="bg-white transition-all duration-300 px-[35px] pt-[33px] pb-[28px] hover:translate-y-[-3px]">
+              <p class="text-text mb-[15px]">&quot;No matter where you go, It's is the coolest, most happening thing around! Not able to tell you how happy I am with it.&quot;
+              </p>
+              <div class="flex items-center gap-6"><img class="h-full w-full object-cover rounded-full max-w-[80px]" src="./assets/images/avatar-9.png" alt="avatar">
+                <div>
+                  <p class="text-lead line-clamp-2 font-bold mb-[3px]">Jenny Wilson
+                  </p>
+                  <p class="text-md text-gray-500">Biffco Enterprises Ltd.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white transition-all duration-300 px-[35px] pt-[33px] pb-[28px] hover:translate-y-[-3px]">
+              <p class="text-text mb-[15px]">&quot;Wow what great service, I love it! It's is the most valuable business resource we have EVER purchased. We can't understand how we've been living without it. I couldn't have asked for more than this.&quot;
+              </p>
+              <div class="flex items-center gap-6"><img class="h-full w-full object-cover rounded-full max-w-[80px]" src="./assets/images/avatar-10.png" alt="avatar">
+                <div>
+                  <p class="text-lead line-clamp-2 font-bold mb-[3px]">Jenny Wilson
+                  </p>
+                  <p class="text-md text-gray-500">Biffco Enterprises Ltd.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8 flex-1">
+            <div class="bg-white transition-all duration-300 px-[35px] pt-[33px] pb-[28px] hover:translate-y-[-3px]">
+              <p class="text-text mb-[15px]">&quot;Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business. Needless to say we are extremely satisfied with the results. &quot;
+              </p>
+              <div class="flex items-center gap-6"><img class="h-full w-full object-cover rounded-full max-w-[80px]" src="./assets/images/avatar-11.png" alt="avatar">
+                <div>
+                  <p class="text-lead line-clamp-2 font-bold mb-[3px]">Jenny Wilson
+                  </p>
+                  <p class="text-md text-gray-500">Biffco Enterprises Ltd.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white transition-all duration-300 px-[35px] pt-[33px] pb-[28px] hover:translate-y-[-3px]">
+              <p class="text-text mb-[15px]">&quot;It's is both attractive and highly adaptable. It's exactly what I've been looking for. Definitely worth the investment.&quot;
+              </p>
+              <div class="flex items-center gap-6"><img class="h-full w-full object-cover rounded-full max-w-[80px]" src="./assets/images/avatar-12.png" alt="avatar">
+                <div>
+                  <p class="text-lead line-clamp-2 font-bold mb-[3px]">Jenny Wilson
+                  </p>
+                  <p class="text-md text-gray-500">Biffco Enterprises Ltd.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[150px]">
+        <div class="lg:grid lg:grid-cols-2 gap-[150px]"><img class="h-full w-full object-cover order-first rounded-2xl mb-[30px] lg:mb-0 lg:flex-1" src="{% static '/assets/images/thumbnail-24.png' %}" alt="Agon">
+          <div class="flex-1 order-1 lg:gap-[30px] xl:gap-[64px]"><span class="font-chivo inline-block bg-bg-6 text-green-900 py-[14px] px-[28px] rounded-[50px] text-[14px] leading-[14px] mb-[22px]"></span>
+            <div class="md:grid md:grid-cols-2 md:gap-y-[34px] lg:gap-x-[70px]">
+                {% autoescape off %}
+           {{ body.about_body }}
+          {% endautoescape %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[88px]">
+        <div class="grid grid-cols-2 flex-1 text-center gap-2 gap-y-8 md:grid-cols-2 xl:gap-y-[70px] lg:grid-cols-5 mb-[44px] md:mb-[88px]">
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">+12
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">years in business
+            </p>
+          </div>
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">2K+
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">projects done
+            </p>
+          </div>
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">28+
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">countries /offices
+            </p>
+          </div>
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">86
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">Constant clients
+            </p>
+          </div>
+          <div>
+            <h1 class="font-chivo font-bold lg:text-display-3 md:text-[45px] md:leading-[52px] text-[35px] leading-[42px] mb-1 text-green-900">+12
+            </h1>
+            <p class="text-text text-gray-500 mx-auto md:w-[26ch]">years in business
+            </p>
+          </div>
+        </div>
+        <div class="w-full bg-gray-300 h-[1px]"></div>
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[128px]">
+      </div>
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[238px]">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between mb-[45px] md:mb-[87px]">
+          <div>
+            <h2 class="text-gray-900 font-bold font-chivo mb-5 text-[35px] leading-[44px] md:text-[46px] md:leading-[52px] lg:text-heading-1 md:mb-[30px] max-w-[725px]">From Our Blog</h2>
+            <p class="text-quote md:text-lead-lg text-gray-600">From Our blog and Event fanpage
+            </p>
+          </div>
+          <button type="button"> <a class="flex items-center inline-block z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-[50px] bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-white bg-gray-900 w-fit" href="#"><span class="block text-inherit w-full h-full rounded-[50px] text-lg font-chivo font-semibold">View More</span><i> <img class="ml-[7px] w-[12px] filter-white group-hover:filter-black" src="{% static '/assets/images/icons/icon-right.svg' %}" alt="arrow right icon"></i></a></button>
+        </div>
+        <div class="lg:grid lg:grid-cols-3 lg:gap-x-5 xl:gap-x-[30px] gap-y-[50px] xl:gap-y-[87px]"><a class="block group" href="/single.html">
+            <div class="flex items-center mb-[11px]">
+              <div class="bg-gray-500 rounded-full w-[3px] h-[3px] mr-[6px]"></div><span class="uppercase text-gray-500">company</span>
+            </div>
+            <p class="text-heading-4 font-chivo font-bold inline-block mb-[26px]">We can blend colors multiple ways, the most common</p>
+            <div class="relative mb-16">
+              <div class="relative">
+                <div class="pr-[26px] aspect-[430/275]"><img class="h-full w-full object-cover rounded-2xl z-10 relative object-cover" src="./assets/images/thumbnail-3.png" alt="Agon">
+                </div>
+                <div class="absolute w-full h-full left-0 z-0 top-0 translate-y-[30px] pl-[33px]">
+                  <div class="w-full h-full rounded-2xl bg-opacity-50 transition-all duration-200 bg-bg-9 group-hover:-translate-x-[10px] group-hover:-translate-y-[10px]"></div>
+                </div>
+              </div>
+            </div></a><a class="block group" href="/single.html">
+            <div class="flex items-center mb-[11px]">
+              <div class="bg-gray-500 rounded-full w-[3px] h-[3px] mr-[6px]"></div><span class="uppercase text-gray-500">Marketing Event</span>
+            </div>
+            <p class="text-heading-4 font-chivo font-bold inline-block mb-[26px]">How To Blow Through Capital At An Incredible Rate</p>
+            <div class="relative mb-16">
+              <div class="relative">
+                <div class="pr-[26px] aspect-[430/275]"><img class="h-full w-full object-cover rounded-2xl z-10 relative object-cover" src="./assets/images/thumbnail-4.png" alt="Agon">
+                </div>
+                <div class="absolute w-full h-full left-0 z-0 top-0 translate-y-[30px] pl-[33px]">
+                  <div class="w-full h-full rounded-2xl bg-opacity-50 transition-all duration-200 bg-bg-6 group-hover:-translate-x-[10px] group-hover:-translate-y-[10px]"></div>
+                </div>
+              </div>
+            </div></a><a class="block group" href="/single.html">
+            <div class="flex items-center mb-[11px]">
+              <div class="bg-gray-500 rounded-full w-[3px] h-[3px] mr-[6px]"></div><span class="uppercase text-gray-500">Customer Services</span>
+            </div>
+            <p class="text-heading-4 font-chivo font-bold inline-block mb-[26px]">Design Studios That Everyone Should Know About?</p>
+            <div class="relative mb-16">
+              <div class="relative">
+                <div class="pr-[26px] aspect-[430/275]"><img class="h-full w-full object-cover rounded-2xl z-10 relative object-cover" src="./assets/images/thumbnail-5.png" alt="Agon">
+                </div>
+                <div class="absolute w-full h-full left-0 z-0 top-0 translate-y-[30px] pl-[33px]">
+                  <div class="w-full h-full rounded-2xl bg-opacity-50 transition-all duration-200 bg-bg-4 group-hover:-translate-x-[10px] group-hover:-translate-y-[10px]"></div>
+                </div>
+              </div>
+            </div></a>
+        </div>
+      </div>
+  </body>
+</html>
+{% endblock %}

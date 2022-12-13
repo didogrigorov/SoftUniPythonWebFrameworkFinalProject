@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SignUp Page</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="assets/styles/tailwind.min.css">
+    <link rel="stylesheet" href="assets/styles/app.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&amp;family=Noto+Sans:wght@400;500;600;700;800&amp;display=swap">
+  </head>
+  <body class="overflow-x-hidden w-screen relative signUp-page">
+    <div class="full-with address hidden">
+      <div class="flex items-center px-3 justify-between gap-5 mx-auto max-w-[1320px] py-[10px] md:mx-8">
+        <p class="text-base hidden font-bold md:block">66 avenue des Champs, 75008, Paris, France</p>
+        <div class="flex items-center gap-5 contact ml-auto gap-[10px] md:gap-5 md:flex-row"> <span>(+01) - 456 789</span>
+          <div class="border border-dashed border-white self-stretch"></div><span>contact@agon.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]"><a name="top"> </a>
+      <div class="absolute top-0 left-0 w-screen h-full bg-opacity-80 hidden video-iframe bg-[#0b0b0b] z-[999999]">
+        <div class="mx-auto video w-1/2">
+          <div class="flex justify-end">
+            <button class="text-white close-video text-[20px]" type="button" title="Close (Esc)">x</button>
+          </div>
+          <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/oRI37cOPBQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <header class="h-auto full-width relative py-[15px] first-letter:lg:py-[26px]">
+        <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 flex items-center justify-between mx-auto relative !mt-0 max-w-[1320px]"><a class="flex" href="/"><img class="logo z-50 w-[90px] md:w-[101px] lg:w-[122px] xl:w-[138px]" src="assets/images/logo.svg" alt="logo image"></a>
+          <nav class="z-50 absolute hidden top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:block"> 
+            <ul class="navbar flex flex-col justify-center font-chivo gap-[34px] lg:flex-row">
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/">Home</a><i><img class="icon-caret group-hover:filter-green" src="assets/images/icons/icon-caret.svg" alt="caret"></i>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-2 w-[340px]">
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="hp1"><a class="flex items-center text-[14px]" href="/"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-home.svg" alt=""><span class="whitespace-nowrap">Homepage 01</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="hp2"><a class="flex items-center text-[14px]" href="/home-2.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-home.svg" alt=""><span class="whitespace-nowrap">Homepage 02</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="hp3"><a class="flex items-center text-[14px]" href="/home-3.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-home.svg" alt=""><span class="whitespace-nowrap">Homepage 03</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="hp4"><a class="flex items-center text-[14px]" href="/home-4.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-home.svg" alt=""><span class="whitespace-nowrap">Homepage 04</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="hp5"><a class="flex items-center text-[14px]" href="/home-5.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-home.svg" alt=""><span class="whitespace-nowrap">Homepage 05</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="hp6"><a class="flex items-center text-[14px]" href="/home-6.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-home.svg" alt=""><span class="whitespace-nowrap">Homepage 06</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="hp7"><a class="flex items-center text-[14px]" href="/home-7.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-home.svg" alt=""><span class="whitespace-nowrap">Homepage 07</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="hp8"><a class="flex items-center text-[14px]" href="/home-8.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-home.svg" alt=""><span class="whitespace-nowrap">Homepage 08</span></a></li>
+                </ul>
+              </li>
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/">About</a><i><img class="icon-caret group-hover:filter-green" src="assets/images/icons/icon-caret.svg" alt="caret"></i>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="ab1"><a class="flex items-center text-[14px]" href="/about-1.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-star-header.svg" alt=""><span class="whitespace-nowrap">About 01</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="ab2"><a class="flex items-center text-[14px]" href="/about-2.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-star-header.svg" alt=""><span class="whitespace-nowrap">About 02</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="ab3"><a class="flex items-center text-[14px]" href="/about-3.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-star-header.svg" alt=""><span class="whitespace-nowrap">About 03</span></a></li>
+                </ul>
+              </li>
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/">Company</a><i><img class="icon-caret group-hover:filter-green" src="assets/images/icons/icon-caret.svg" alt="caret"></i>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="sv1"><a class="flex items-center text-[14px]" href="/services-1.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-gem.svg" alt=""><span class="whitespace-nowrap">Services 01</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="sv2"><a class="flex items-center text-[14px]" href="/services-2.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-gem.svg" alt=""><span class="whitespace-nowrap">Services 02</span></a></li>
+                  <li class="hr px-[22px]"> <span class="block bg-gray-100 w-full h-[1px] my-[5px]"></span></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="p1"><a class="flex items-center text-[14px]" href="/pricing-1.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-database.svg" alt=""><span class="whitespace-nowrap">Pricing 01</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="p2"><a class="flex items-center text-[14px]" href="/pricing-2.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-database.svg" alt=""><span class="whitespace-nowrap">Pricing 02</span></a></li>
+                  <li class="hr px-[22px]"> <span class="block bg-gray-100 w-full h-[1px] my-[5px]"></span></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="faqs1"><a class="flex items-center text-[14px]" href="/faqs-1.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-headset.svg" alt=""><span class="whitespace-nowrap">FAQS 01</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="faqs2"><a class="flex items-center text-[14px]" href="/faqs-2.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-headset.svg" alt=""><span class="whitespace-nowrap">FAQS 02</span></a></li>
+                  <li class="hr px-[22px]"> <span class="block bg-gray-100 w-full h-[1px] my-[5px]"></span></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="career"><a class="flex items-center text-[14px]" href="/career.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-briefcase.svg" alt=""><span class="whitespace-nowrap">Career</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="career-details"><a class="flex items-center text-[14px]" href="/career-details.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-briefcase.svg" alt=""><span class="whitespace-nowrap">Career Detials</span></a></li>
+                </ul>
+              </li>
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/">Pages</a><i><img class="icon-caret group-hover:filter-green" src="assets/images/icons/icon-caret.svg" alt="caret"></i>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="contact"><a class="flex items-center text-[14px]" href="/contact.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-plane-header.svg" alt=""><span class="whitespace-nowrap">Contact</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="singup"><a class="flex items-center text-[14px]" href="/signup.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-user-add.svg" alt=""><span class="whitespace-nowrap">Sign Up</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="login"><a class="flex items-center text-[14px]" href="/login.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-fingerprint.svg" alt=""><span class="whitespace-nowrap">Log In</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="rp"><a class="flex items-center text-[14px]" href="/reset-password.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-settings.svg" alt=""><span class="whitespace-nowrap">Reset Password</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="error404"><a class="flex items-center text-[14px]" href="/error-404.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-exclamation.svg" alt=""><span class="whitespace-nowrap">Error 404</span></a></li>
+                </ul>
+              </li>
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/">Blog</a><i><img class="icon-caret group-hover:filter-green" src="assets/images/icons/icon-caret.svg" alt="caret"></i>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="b1"><a class="flex items-center text-[14px]" href="/blog-1.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-edit.svg" alt=""><span class="whitespace-nowrap">Blog 01</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="b2"><a class="flex items-center text-[14px]" href="/blog-2.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-edit.svg" alt=""><span class="whitespace-nowrap">Blog 02</span></a></li>
+                  <li class="hr px-[22px]"> <span class="block bg-gray-100 w-full h-[1px] my-[5px]"></span></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="single"><a class="flex items-center text-[14px]" href="/templates/single.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-document-signed.svg" alt=""><span class="whitespace-nowrap">Blog Single</span></a></li>
+                </ul>
+              </li>
+              <li class="flex items-center group"><a class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/">Shop</a><i><img class="icon-caret group-hover:filter-green" src="assets/images/icons/icon-caret.svg" alt="caret"></i>
+                <ul class="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="s1"><a class="flex items-center text-[14px]" href="/shop-1.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-edit.svg" alt=""><span class="whitespace-nowrap">Shop 01</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="s2"><a class="flex items-center text-[14px]" href="/shop-2.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-edit.svg" alt=""><span class="whitespace-nowrap">Shop 02</span></a></li>
+                  <li class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100" data-menu="product"><a class="flex items-center text-[14px]" href="/single-product.html"><img class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]" src="assets/images/icons/icon-edit.svg" alt=""><span class="whitespace-nowrap">Product Details</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="hidden xl:block">
+            <button type="button"> <a class="flex items-center inline-block z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-[50px] bg-gray-100 text-gray-900 hover:bg-gray-900 hover:text-white hover:-translate-y-[2px] hidden lg:flex" href="#"><span class="block text-inherit w-full h-full rounded-[50px] text-heading-6 font-bold font-chivo">Learn more</span><i> <img class="ml-[7px] w-[12px] filter-black group-hover:filter-white" src="assets/images/icons/icon-right.svg" alt="arrow right icon"></i></a></button>
+          </div>
+        </div>
+        <div class="burger-icon burger-icon-white menu__icon"><span class="burger-icon-top"></span><span class="burger-icon-mid"> </span><span class="burger-icon-bottom"></span></div>
+        <nav class="fixed top-0 right-0 bg-white flex flex-col h-screen nav-shadow overflow-y-scroll nav-mobile opacity-0 pointer-events-none transition-all duration-200 w-[380px] z-[100]">
+          <div class="flex items-center border-b p-[15px] lg:p-[26px] gap-[10px] border-[#F2F4F7]"><img class="max-w-[50px]" src="assets/images/avatar-9.png" alt="avatar">
+            <div>
+              <p class="font-bold">Hi! Steven</p>
+              <p class="text-sm font-chivo text-gray-500">You have 5 new messages</p>
+            </div>
+          </div>
+          <div class="p-[30px]">
+            <ul class="font-chivo font-medium text-[16px] leading-[16px]">
+              <li class="group menu-mobile-item py-[13px]">
+                <div class="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
+                  <p>Home</p><img class="w-[18px] h-[18px]" src="assets/images/icons/icon-angle-down-fill.svg" alt="angle icon">
+                </div>
+                <ul class="pl-5 menu-child hidden pt-[10px]">
+                  <li class="text-md py-[10px]" id="hp1"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/">Homepage 01</a></li>
+                  <li class="text-md py-[10px]" id="hp2"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/home-2.html">Homepage 02</a></li>
+                  <li class="text-md py-[10px]" id="hp3"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/home-3.html">Homepage 03</a></li>
+                  <li class="text-md py-[10px]" id="hp4"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/home-4.html">Homepage 04</a></li>
+                  <li class="text-md py-[10px]" id="hp5"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/home-5.html">Homepage 05</a></li>
+                  <li class="text-md py-[10px]" id="hp6"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/home-6.html">Homepage 06</a></li>
+                  <li class="text-md py-[10px]" id="hp7"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/home-7.html">Homepage 07</a></li>
+                  <li class="text-md py-[10px]" id="hp8"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/home-8.html">Homepage 08</a></li>
+                </ul>
+              </li>
+              <li class="group menu-mobile-item py-[13px]">
+                <div class="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
+                  <p>About</p><img class="w-[18px] h-[18px]" src="assets/images/icons/icon-angle-down-fill.svg" alt="angle icon">
+                </div>
+                <ul class="pl-5 menu-child hidden pt-[10px]">
+                  <li class="text-md py-[10px]" id="ab1"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/about-1.html">About 01</a></li>
+                  <li class="text-md py-[10px]" id="ab2"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/about-2.html">About 02</a></li>
+                  <li class="text-md py-[10px]" id="ab3"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/about-3.html">About 03</a></li>
+                </ul>
+              </li>
+              <li class="group menu-mobile-item py-[13px]">
+                <div class="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
+                  <p>Services</p><img class="w-[18px] h-[18px]" src="assets/images/icons/icon-angle-down-fill.svg" alt="angle icon">
+                </div>
+                <ul class="pl-5 menu-child hidden pt-[10px]">
+                  <li class="text-md py-[10px]" id="sv1"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/services-1.html">Services 01</a></li>
+                  <li class="text-md py-[10px]" id="sv2"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/services-2.html">Services 02</a></li>
+                  <li class="text-md py-[10px]" id="p1"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/pricing-1.html">Pricing 01</a></li>
+                  <li class="text-md py-[10px]" id="p2"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/pricing-2.html">Pricing 02</a></li>
+                  <li class="text-md py-[10px]" id="faqs1"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/faqs-1.html">FAQS 01</a></li>
+                  <li class="text-md py-[10px]" id="faqs2"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/faqs-2.html">FAQS 02</a></li>
+                  <li class="text-md py-[10px]" id="career"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/career.html">Career</a></li>
+                  <li class="text-md py-[10px]" id="career-details"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/career-details.html">Career Detials</a></li>
+                </ul>
+              </li>
+              <li class="group menu-mobile-item py-[13px]">
+                <div class="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
+                  <p>Pages</p><img class="w-[18px] h-[18px]" src="assets/images/icons/icon-angle-down-fill.svg" alt="angle icon">
+                </div>
+                <ul class="pl-5 menu-child hidden pt-[10px]">
+                  <li class="text-md py-[10px]" id="contact"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/contact.html">Contact</a></li>
+                  <li class="text-md py-[10px]" id="singup"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/signup.html">Sign Up</a></li>
+                  <li class="text-md py-[10px]" id="login"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/login.html">Log In</a></li>
+                  <li class="text-md py-[10px]" id="rp"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/reset-password.html">Reset Password</a></li>
+                  <li class="text-md py-[10px]" id="error404"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/error-404.html">Error 404</a></li>
+                </ul>
+              </li>
+              <li class="group menu-mobile-item py-[13px]">
+                <div class="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
+                  <p>Blog</p><img class="w-[18px] h-[18px]" src="assets/images/icons/icon-angle-down-fill.svg" alt="angle icon">
+                </div>
+                <ul class="pl-5 menu-child hidden pt-[10px]">
+                  <li class="text-md py-[10px]" id="b1"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/blog-1.html">Blog 01</a></li>
+                  <li class="text-md py-[10px]" id="b2"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/blog-2.html">Blog 02</a></li>
+                  <li class="text-md py-[10px]" id="single"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/templates/single.html">Blog Single</a></li>
+                </ul>
+              </li>
+              <li class="group menu-mobile-item py-[13px]">
+                <div class="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
+                  <p>Shop</p><img class="w-[18px] h-[18px]" src="assets/images/icons/icon-angle-down-fill.svg" alt="angle icon">
+                </div>
+                <ul class="pl-5 menu-child hidden pt-[10px]">
+                  <li class="text-md py-[10px]" id="s1"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/shop-1.html">Shop 01</a></li>
+                  <li class="text-md py-[10px]" id="s2"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/shop-2.html">Shop 02</a></li>
+                  <li class="text-md py-[10px]" id="product"><a class="block transition-all duration-200 hover:text-green-900 hover:translate-x-1" href="/single-product.html">Product Details</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="mt-5 border-t border-b border-gray-100 pb-5 mb-[25px] pt-[30px]">
+              <p class="font-bold text-heading-6 mb-[10px]">Your Account</p>
+              <ul class="text-[15px]"> 
+                <li class="py-[13px]"><a class="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]" href="/">Profile</a></li>
+                <li class="py-[13px]"><a class="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]" href="/">Work Preferences</a></li>
+                <li class="py-[13px]"><a class="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]" href="/">My Boosted Shots</a></li>
+                <li class="py-[13px]"><a class="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]" href="/">My Collections</a></li>
+                <li class="py-[13px]"><a class="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]" href="/">Account Settings</a></li>
+                <li class="py-[13px]"><a class="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]" href="/">Go Pro</a></li>
+                <li class="py-[13px]"><a class="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]" href="/">Sign Out</a></li>
+              </ul>
+            </div>
+            <div class="text-gray-400 font-chivo text-[13px]">Copyright 2022 © Agon - Agency Template.<br><span>Designed by</span><a class="text-green-900" href="http://alithemes.com">&nbsp;AliThemes</a></div>
+          </div>
+        </nav>
+      </header>
+      <div class="full-width bg-bg-6 px-5 text-center flex flex-col items-center justify-center pt-[127px] pb-[300px] lg:pb-[400px]">
+        <div class="max-w-[400px]">
+          <h2 class="font-bold font-chivo text-[25px] leading-[30px] md:text-heading-3 mb-[50px]">Let’s join us
+          </h2>
+          <button type="button"> <a class="flex items-center inline-block z-10 relative transition-all duration-200 group py-[13px] md:px-[95px] px-[60px] rounded-md bg-white text-gray-500 hover:text-gray-900 hover:-translate-y-[2px] text-gray-500 flex flex-row-reverse w-fit mb-[30px]" href="#"><span class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Sign up with Google</span><img class="mr-5" src="assets/images/icons/Icon-google.svg" alt="google icon"></a></button>
+          <div class="flex items-center justify-center gap-[7px] mb-[25px]">
+            <div class="bg-gray-300 w-[50px] h-[2px]"> </div>
+            <p class="text-text text-gray-500">Or, sign up with your email
+            </p>
+            <div class="bg-gray-300 w-[50px] h-[2px]"> </div>
+          </div>
+          <form class="bg-white w-full p-8 shadow-3 rounded-[6px] md:p-12" action="#"> 
+            <div class="relative mb-6">
+              <input class="outline-none flex-1 pr-3 border caret-green-900 w-full placeholder:text-gray-400 placeholder:text-text placeholder:font-chivo border-[#C2C8D0] rounded-[4px] py-[14px] pl-[16px] pr-[12px] focus:border-green-900 focus:border-[2px]" type="text" placeholder="Your name *" required><a class="text-text text-green-900 absolute hover:opacity-70 top-1/2 -translate-y-1/2 right-[12px]" href="#">Edit</a>
+            </div>
+            <div class="relative mb-6">
+              <input class="outline-none flex-1 pr-3 border caret-green-900 w-full placeholder:text-gray-400 placeholder:text-text placeholder:font-chivo border-[#C2C8D0] rounded-[4px] py-[14px] pl-[16px] pr-[12px] focus:border-green-900 focus:border-[2px]" type="text" placeholder="Your email *" required>
+            </div>
+            <div class="relative mb-6 last-of-type:mb-4">
+              <input class="outline-none flex-1 pr-3 border caret-green-900 w-full peer placeholder:text-gray-400 placeholder:text-text placeholder:font-chivo border-[#C2C8D0] rounded-[4px] py-[14px] pl-[16px] pr-[12px] focus:border-green-900 focus:border-[2px]" required type="password" name="password" id="password"><span class="text-gray-400 text-sm px-1 font-chivo font-medium absolute left-3 bg-white -translate-y-1/2 peer-focus:text-green-900">Password</span><i class="absolute hover:opacity-70 top-1/2 -translate-y-1/2 right-[12px]"> <img src="assets/images/icons/icon-eye-gray.svg" alt="eye icon"></i>
+            </div>
+            <div class="relative mb-6 last-of-type:mb-4">
+              <input class="outline-none flex-1 pr-3 border caret-green-900 w-full peer placeholder:text-gray-400 placeholder:text-text placeholder:font-chivo border-[#C2C8D0] rounded-[4px] py-[14px] pl-[16px] pr-[12px] focus:border-green-900 focus:border-[2px]" required type="password" name="password" id="retype-password"><span class="text-gray-400 text-sm px-1 font-chivo font-medium absolute left-3 bg-white -translate-y-1/2 peer-focus:text-green-900">Re-type Password</span><i class="absolute hover:opacity-70 top-1/2 -translate-y-1/2 right-[12px]"> <img src="assets/images/icons/icon-eye-gray.svg" alt="eye icon"></i>
+            </div>
+            <div class="flex items-center mb-6 gap-[7px]">
+              <div class="relative w-7 h-7 transition-all duration-200 p-[5px] hover:bg-gray-200 rounded-[4px]"> 
+                <input class="opacity-0 cursor-pointer relative z-10 peer" id="term" type="checkbox" name="term"><img class="absolute hidden top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 peer-checked:block" src="assets/images/icons/icon-check-gray.svg" alt="checked icon">
+                <div class="absolute bg-transparent pointer-events-none z-0 border-[2px] rounded-[4px] w-[18px] h-[18px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 peer-checked:border-transparent border-[#3B4256]"></div>
+              </div><span class="text-sm font-bold text-gray-500">Agree to <a class="text-green-900 hover:opacity-70" href="/">terms & conditions</a></span>
+            </div>
+            <button class="mb-6 w-full text-white bg-green-900 transition-opacity duration-200 text-heading-6 font-chivo font-bold shadow-sm py-[13px] hover:opacity-75" type="submit">Continue</button>
+            <div class="flex gap-2"> 
+              <p class="text-text text-gray-500">Already have an account?
+              </p><a class="text-green-900 hover:opacity-70" href="#">
+                <p class="text-text">Sign in now 
+                </p></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="full-width scale-75 translate-y-[-61%] mb-[-250px]"> 
+        <div class="flex gap-[50px] ml-[-175px] lg:ml-[-315px]"> <img class="rounded-2xl object-cover max-w-[332px] max-h-[403px]" src="assets/images/thumbnail-12.png" alt="Agon"><img class="rounded-2xl relative object-cover bottom-[-170px] max-w-[281px] max-h-[325px]" src="assets/images/thumbnail-2.png" alt="Agon"><img class="rounded-2xl relative object-cover w-[637px] h-[434px] bottom-[-50px]" src="assets/images/thumbnail-5.png" alt="Agon"><img class="rounded-2xl relative object-cover bottom-[-270px] max-w-[253px] max-h-[293px]" src="assets/images/thumbnail-13.png" alt="Agon"><img class="rounded-2xl object-cover relative max-w-[346px] max-h-[399px] bottom-[-90px]" src="assets/images/thumbnail-4.png" alt="Agon"></div>
+      </div>
+      <div class="bg fixed bottom-28 rounded-full grid place-items-center opacity-0 invisible transition-all duration-300 right-[20px] z-[9999] w-[48px] h-[48px]" id="backToTop"><a class="rounded-full bg-green-900 grid place-items-center w-[48px] h-[48px]" href="#top"><img src="assets/images/icons/icon-up.svg" alt="to top icon"></a></div>
+      <footer class="mt-[92px] lg:mt-[150px] xl:mt-[200px] mb-[30px]">
+        <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0"> 
+          <div class="flex flex-col items-center gap-2 mb-14 md:flex-row md:justify-between"> <img class="h-full w-full object-cover max-w-[162px]" src="assets/images/logo.svg" alt="logo">
+            <div class="flex items-center flex-col gap-5 md:flex-row lg:gap-[30px]">
+              <p class="text-heading-6 font-chivo font-bold">Ready to get started?</p>
+              <button type="button"> <a class="flex items-center inline-block z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-md bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-white bg-gray-900 w-fit" href="#"><span class="block text-inherit w-full h-full rounded-md text-lg font-chivo font-semibold">Create an Account</span></a></button>
+            </div>
+          </div>
+          <div class="w-full bg-gray-200 h-[1px] mb-[52px]"></div>
+          <div class="text-gray-600 grid gird-cols-1 gap-8 mb-[48px] md:grid-cols-2 lg:grid-cols-5 xl:gap-[98px]">
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">Contact</h5>
+              <p class="text-text mb-5">4517 Washington Ave. Manchester, Kentucky 39495
+              </p>
+              <p class="text-text underline">(239) 555-0108
+              </p>
+              <p class="text-text underline">contact@agon.com
+              </p>
+            </div>
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">About Us</h5>
+              <ul>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Mission &amp; Vision</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Our Team</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Careers</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Press &amp; Media</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Advertising</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Testimonials</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">Discover</h5>
+              <ul>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Our Blog</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Plans &amp; Pricing</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Knowledge Base</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Cookie Policy</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Office Center</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">News &amp; Events</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">Support</h5>
+              <ul>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">FAQs</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Editor Help</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Community</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Live Chatting</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Contact Us</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Support Center</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">Useful links</h5>
+              <ul>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Request an offer</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">How it works</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Pricing</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Reviews</a></li>
+                <li class="mb-2"><a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">Stories</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full bg-gray-200 h-[1px] mb-[46px]"></div>
+          <div class="text-gray-400 lg:flex lg:items-center lg:justify-between">
+            <div class="md:flex md:items-center md:gap-6">
+              <p class="text-lead font-bold">©Agon Official 2022
+              </p>
+              <div class="flex items-center justify-between md:gap-6"><a class="text-text" href="/">Privacy policy</a><a class="text-text" href="/">Cookies</a><a class="text-text" href="/">Terms of service</a></div>
+            </div>
+            <div class="flex items-center justify-center gap-5 mt-5 lg:mt-0"><a class="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1" href="/"><img class="h-full w-full object-cover" src="assets/images/icons/icon-facebook-green.svg" alt="facebook icon"></a><a class="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1" href="/"><img class="h-full w-full object-cover" src="assets/images/icons/icon-instagram-green.svg" alt="instagram icon"></a><a class="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1" href="/"><img class="h-full w-full object-cover" src="assets/images/icons/icon-twitter-green.svg" alt="twitter icon"></a><a class="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1" href="/"><img class="h-full w-full object-cover" src="assets/images/icons/icon-linkedin-green.svg" alt="linkedin icon"></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="assets/scripts/vendors/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/vendors/slick.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
+  </body>
+</html>

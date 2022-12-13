@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <body class="overflow-x-hidden w-screen relative terms-page">
+    <div class="full-with address hidden">
+      <div class="flex items-center px-3 justify-between gap-5 mx-auto max-w-[1320px] py-[10px] md:mx-8">
+        <p class="text-base hidden font-bold md:block">66 avenue des Champs, 75008, Paris, France</p>
+        <div class="flex items-center gap-5 contact ml-auto gap-[10px] md:gap-5 md:flex-row"> <span>(+01) - 456 789</span>
+          <div class="border border-dashed border-white self-stretch"></div><span>contact@agon.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]"><a name="top"> </a>
+      <div class="absolute top-0 left-0 w-screen h-full bg-opacity-80 hidden video-iframe bg-[#0b0b0b] z-[999999]">
+        <div class="mx-auto video w-1/2">
+          <div class="flex justify-end">
+            <button class="text-white close-video text-[20px]" type="button" title="Close (Esc)">x</button>
+          </div>
+          <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/oRI37cOPBQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="overlay"></div>
+
+      <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 mx-auto max-w-[1173px]">
+        <div class="grid grid-cols-1 md:grid-cols-[168px_1fr_55px] mb-[61px]">
+          <div></div>
+          <h1 class="font-extrabold font-chivo text-[35px] leading-[44px] sm:text-[46px] sm:leading-[52px] md:text-heading-1 text-center md:ml-[78px] md:mr-[50px]">Terms & Conditions
+          </h1>
+          <div></div>
+        </div>
+        <div class="grid text-gray-500 grid-cols-[1fr_55px] md:grid-cols-[168px_1fr_55px] text-[14px] leading-[25px] md:text-[18px] md:leading-[32px]">
+
+          <div class="content order-last col-span-2 md:ml-[78px] md:mr-[50px]">
+            <div class="mb-12 aspect-[824/398]"><img class="h-full w-full object-cover rounded-2xl" src="{%  static '/assets/images/img-1.png' %}" alt="Agon">
+            </div>
+              {% autoescape off %}
+           {{ body.tc_body }}
+          {% endautoescape %}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="limitation-of-liability">Limitation of Liability#}
+{#            </p>#}
+{#            <p class="mb-[30px]">Under no circumstances shall AliThemes be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if AliThemes or an authorized representative has been advised of the possibility of such damages. If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="licensing-policy">Licensing Policy#}
+{#            </p>#}
+{#            <p class="mb-[30px]">AliThemes WordPress plugins and themes are released under the GNU General Public License v2 or later. Please refer to licensing policy page for licensing details.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="product-compatibility">Product Compatibility#}
+{#            </p>#}
+{#            <p class="mb-[30px]">The products are developed to be compatible with the latest version of WordPress because we always strive to stay up-to-date with the latest version of WordPress. You might experience certain performance or functionality glitches with the products if you use any version prior to that.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="delivery">Delivery#}
+{#            </p>#}
+{#            <p class="mb-[30px]">Your purchased product(s) information will be emailed to the email address (that you will provide) once we receive your payment. Even though this usually takes a few minutes, it may also take up to 24 hours. You can contact us through our contact page if you do not receive your email after waiting for this time period. You will also have access to your purchased products from your account in AliThemes after logging in.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="ownership">Ownership#}
+{#            </p>#}
+{#            <p class="mb-[30px]">All the products are the property of AliThemes. So you may not claim ownership (intellectual or exclusive) over any of our products, modified or unmodified. Our products come ‘as is’, without any kind of warranty, either expressed or implied. Under no circumstances can our juridical person be accountable for any damages including, but not limited to, direct, indirect, special, incidental or consequential damages or other losses originating from the employment of or incapacity to use our products.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="browser-compatibility">Browser Compatibility#}
+{#            </p>#}
+{#            <p class="mb-[30px]">We consider it our duty to offer a great experience across most major browsers, which is why our products support the latest modern web browsers including (but not limited to) Firefox, Safari, Chrome & Internet Explorer 9+. However, the performance may vary between different browsers, versions, and operating systems.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="updates">Updates#}
+{#            </p>#}
+{#            <p class="mb-[30px]">Our themes are constantly updated to be compatible with the latest stable version of WordPress. Please ensure that you always use the most current version of our themes.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="theme-support">Theme Support#}
+{#            </p>#}
+{#            <p class="mb-[30px]">Please refer to Help and Support Policy page for details.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="price-changes">Price Changes#}
+{#            </p>#}
+{#            <p class="mb-[30px]">AliThemes reserves the right to modify or suspend (temporarily or permanently) a subscription at any point of time and from time to time with or without any notice.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="refund-policy">Refund Policy#}
+{#            </p>#}
+{#            <p class="mb-[30px]">Please refer to Refund Policy page for details.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="email-and-newsletter">Email & Newsletter#}
+{#            </p>#}
+{#            <p class="mb-[30px]">AliThemes may occasionally send you emails related to the purchase of product(s) from our company. We may also send you occasional email newsletters relating to AliThemes updates and promotions. We will never sell or release your email to any third party vendors. You may opt out of these emails at any time without penalty.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="license-agreement">License Agreement#}
+{#            </p>#}
+{#            <p class="mb-[30px]">By purchasing our product(s), you indicate and consent that you have read and agree to the Terms & Conditions listed and detailed on this page. We reserve the right to change or modify the current Terms and Conditions without prior notice or consent.</p>#}
+{#            <p class="font-bold font-chivo text-[14px] md:text-heading-6 scroll-mt-5 mb-5 text-gray-900" id="severability">Severability#}
+{#            </p>#}
+{#            <p class="mb-[30px]">If any part of this agreement is declared unenforceable or invalid, all remaining clauses in this agreement shall remain binding on the customer.</p>#}
+          </div>
+        </div>
+      </div>
+      <div class="bg fixed bottom-28 rounded-full grid place-items-center opacity-0 invisible transition-all duration-300 right-[20px] z-[9999] w-[48px] h-[48px]" id="backToTop"><a class="rounded-full bg-green-900 grid place-items-center w-[48px] h-[48px]" href="#top"><img src="./assets/images/icons/icon-up.svg" alt="to top icon"></a></div>
+
+    </div>
+  </body>
+</html>
+{% endblock %}
